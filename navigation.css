@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+
+html {
+  --couleur1: rgb(27, 25, 25);
+  --couleur2: white;
+  --couleurhover: #c48a0d;
+}
+
+/*ipadpro*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+
+    body{
+        background-color: black;
+    }
+
+    .wrappernav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a{
+        font-size: 5em;
+        text-decoration: none;
+        color: var(--couleur2);
+        font-family: "Indie Flower", cursive;
+        line-height: 4;
+    }
+
+    a:hover {
+        text-decoration: underline wavy var(--couleurhover);
+      }
+}
+
+/*iphone X*/
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+
+    
+    body{
+        background-color: black;
+    }
+
+    .wrappernav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    a{
+        font-size: 2.5em;
+        text-decoration: none;
+        color: var(--couleur2);
+        font-family: "Indie Flower", cursive;
+        line-height: 4;
+    }
+
+    a:hover {
+        text-decoration: underline wavy var(--couleurhover);
+      }
+}
+
+/*iphone 5/SE*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    /*iphone 5/SE*/
+    body{
+        background-color: black;
+    }
+
+    .wrappernav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    a{
+        font-size: 2em;
+        text-decoration: none;
+        color: var(--couleur2);
+        font-family: "Indie Flower", cursive;
+        line-height: 3.5;
+    }
+
+    a:hover {
+        text-decoration: underline wavy var(--couleurhover);
+      }
+    }

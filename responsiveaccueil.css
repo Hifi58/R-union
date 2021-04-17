@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+
+html {
+    --couleur1: rgb(27, 25, 25);
+    --couleur2: white;
+    --couleurhover: #c48a0d;
+  }
+
+/*pc portable*/
+@media only screen and (max-width : 1639px){
+    .lienspages{
+       
+        font-size: 1em;
+    }
+    }
+
+
+/*ipadpro*/
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+    /*corps de page*/
+    
+    body{
+        padding: 0;                                                   
+        margin: 0;
+        background-image: none;
+        background-image: url(images/fdresp.jpg);
+        background-repeat: no-repeat;
+        background-position-y: 450px;
+        background-color: var(--couleur1);
+    }
+
+    h1 {
+        font-family: "Indie Flower", cursive;
+        color: var(--couleur2);
+        font-size: 3.12em;
+        padding-bottom: 400px;
+      }
+
+      nav{
+        padding-right: 0;
+        padding-top: 0;
+        padding: 0;
+        margin: 0;
+      }
+
+      .logslog{
+        padding: 0;
+        margin: 0;;
+      }
+
+      .lienspages{
+        display: none;
+      }
+
+      .burger{
+        display: flex;
+        align-items: flex-end;
+      }
+
+
+    
+}
+
+/*iphone*/
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+    
+    /*toutes les pages*/
+    
+    body{
+        background-image: none;
+    }
+
+    .logo {
+        cursor: pointer;
+        margin-left: 60px;
+        filter: drop-shadow(16px 8px 18px #000);
+        width: 50px;
+        height: 50px;
+      }
+
+      .slogan {
+        font-family: "Indie Flower", cursive;
+        letter-spacing: 3px;
+        font-size: 1em;
+        margin-right: 160px;
+        width: 100px;
+      }
+
+      .logslog {
+        margin-left: 20px;
+        line-height: 0;
+      }
+
+    footer{
+        padding-right: 70px;
+    }
+
+
+    
+    /*lieux*/
+
+    .wrapper1 {
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 200px;
+        padding-bottom: 200px;
+      }
+
+      .imglieux{
+        margin-top: 40px;
+        margin-bottom: 80px;
+        margin-right: 20px;
+        margin-left:20px;
+        filter: sepia(50%);
+        height: 200px;
+    }
+
+}

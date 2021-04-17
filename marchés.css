@@ -1,0 +1,582 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+
+html {
+  --couleur1: rgb(27, 25, 25);
+  --couleur2: white;
+  --couleurhover: #c48a0d;
+}
+
+/*corps*/
+body {
+  padding: 0px;
+  margin: 0;
+  background-image: url(images/fd.jpg);
+  background-size: cover;
+  font-family: "Libre Baskerville", serif;
+}
+
+/*navigation*/
+nav {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  color: var(--couleur2);
+  background: var(--couleur1);
+  z-index: 10;
+}
+
+nav .wrappernav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slogan {
+  font-family: "Indie Flower", cursive;
+  letter-spacing: 4px;
+  font-size: 2em;
+  margin-right: 160px;
+  width: 240px;
+}
+
+.wrappernav {
+  display: block;
+}
+
+.lienspages {
+  text-decoration: none;
+  font-size: 2em;
+  line-height: 41px;
+  color: var(--couleur2);
+  margin-right: 118px;
+  font-family: "Indie Flower", cursive;
+  transition-duration: 1s;
+}
+
+.lienspages:hover {
+  text-decoration: underline wavy var(--couleurhover);
+}
+
+.logo {
+  cursor: pointer;
+  margin-left: 20px;
+  filter: drop-shadow(16px 8px 18px #000);
+}
+
+.logslog {
+  margin-left: 60px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  line-height: 0;
+}
+
+.burger {
+  display: none;
+}
+
+/*corps de page*/
+
+section {
+  display: flex;
+  justify-content: center;
+  padding-top: 250px;
+  padding-left: 250px;
+  padding-bottom: 200px;
+}
+
+.wrappervideo {
+  background: var(--couleur1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 10px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+
+.rond {
+  background-color: var(--couleur2);
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+/*footer*/
+
+footer {
+  background-color: var(--couleur1);
+  bottom: 0;
+  width: 100%;
+  height: 156px;
+  display: block;
+  color: var(--couleur2);
+  position: fixed;
+  margin-top: 40px;
+}
+
+.wrapperfoot {
+  display: flex;
+}
+
+h4 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 20px;
+  margin-left: 40px;
+  opacity: 0.5;
+}
+
+li {
+  list-style: square;
+  line-height: 1.9;
+  font-size: 12px;
+  opacity: 0.5;
+}
+
+li:hover {
+  opacity: 1;
+}
+
+.reseau {
+  position: absolute;
+  top: -10px;
+  right: 120px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  line-height: 2.4;
+  margin-right: 40px;
+}
+
+.reseausociaux {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+}
+
+.reseausociaux:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+}
+
+.mail {
+  text-decoration: none;
+  color: var(--couleur2);
+}
+
+.mail:hover {
+  text-decoration: none;
+  color: var(--couleur2);
+  text-decoration: underline wavy var(--couleurhover);
+}
+
+/*ipadpro*/
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  /*corps de page*/
+
+  body {
+    background-image: url(images/fdresp.jpg);
+    background-repeat: no-repeat;
+    background-color: var(--couleur1);
+  }
+
+  .lienspages {
+    display: none;
+  }
+
+  .wrappernav {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .burger {
+    display: flex;
+    margin-left: 380px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .slogan {
+    font-size: 2.95em;
+  }
+
+  .wrapper1 {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 500px;
+    padding-bottom: 200px;
+  }
+
+  /*footer*/
+
+  .reseau {
+    top: 0px;
+    right: 0px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    line-height: 2.4;
+    margin-right: 0px;
+  }
+
+  /*footer*/
+
+  footer {
+    padding-right: 800px;
+    height: 80px;
+  }
+
+  .reseau {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .reseausociaux {
+    margin-right: 40px;
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+  }
+
+  h4 {
+    display: none;
+  }
+
+  li {
+    display: none;
+  }
+}
+
+/*ipad*/
+
+@media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .burger {
+    margin-right: 200px;
+  }
+
+  .wrapper1 {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  iframe{
+    width: 800px;
+  }
+}
+/*iphone X/6/7*/
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  body {
+    background-image: none;
+  }
+
+  .logo {
+    cursor: pointer;
+    margin-left: 20px;
+    filter: drop-shadow(16px 8px 18px #000);
+    width: 50px;
+    height: 50px;
+  }
+
+  .slogan {
+    font-family: "Indie Flower", cursive;
+    letter-spacing: 3px;
+    font-size: 1em;
+    margin-right: 160px;
+    width: 100px;
+  }
+
+  .logslog {
+    margin-left: 20px;
+    line-height: 0;
+  }
+
+  footer {
+    padding-right: 70px;
+  }
+
+  .lienspages {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+    margin-left: 20px;
+  }
+
+  .slogan {
+    font-size: 1em;
+  }
+
+  .wrappervideo {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  section {
+    flex-direction: column;
+    padding-top: 180px;
+    padding-left: 0px;
+    margin-bottom: 10px;
+  }
+
+  iframe {
+    width: 280px;
+  }
+
+  /*footer*/
+
+  footer {
+    width: 100%;
+    height: 80px;
+  }
+
+  .reseau {
+    flex-direction: row;
+    align-items: center;
+    position: initial;
+    right: 0;
+    margin-top: -10px;
+  }
+
+  .reseausociaux {
+    margin-right: 50px;
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+  }
+
+  h4 {
+    display: none;
+  }
+
+  li {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  /*iphone 5/SE*/
+  .burger {
+    display: flex;
+    margin-right: 20px;
+    margin-left: -20px;
+  }
+
+  .lienspages {
+    display: none;
+  }
+
+  nav {
+    padding-right: 0px;
+    display: flex;
+  }
+
+  .wrappervideo {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+  }
+
+  iframe {
+    width: 300px;
+    height: 215px;
+  }
+
+section{
+  flex-direction: column;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 200px;
+  padding-top: 150px;
+  padding-bottom: 70px;
+}
+
+  .dixlieux {
+    font-size: 1.5em;
+  }
+
+  body {
+    background-image: none;
+  }
+
+  .logo {
+    cursor: pointer;
+    margin-left: 20px;
+    filter: drop-shadow(16px 8px 18px #000);
+    width: 50px;
+    height: 50px;
+  }
+
+  .slogan {
+    font-family: "Indie Flower", cursive;
+    letter-spacing: 3px;
+    font-size: 1em;
+    margin-right: 160px;
+    width: 100px;
+  }
+
+  .logslog {
+    margin-left: 20px;
+    line-height: 0;
+  }
+
+  footer {
+    padding-right: 260px;
+    height: 80px;
+  }
+
+  .reseau {
+    flex-direction: row;
+    align-items: center;
+    margin-left: 90px;
+    position: initial;
+    right: 0;
+    margin-top: -10px;
+  }
+
+  .reseausociaux {
+    margin-right: 20px;
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+  }
+
+  h4 {
+    display: none;
+  }
+
+  li {
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 653px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  /*iphone 5/SE*/
+  .burger {
+    display: flex;
+    margin-right: 30px;
+    margin-left: -60px;
+  }
+
+  .lienspages {
+    display: none;
+  }
+
+  nav {
+    padding-right: 0px;
+    display: flex;
+  }
+
+  .wrapper1 {
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .box1 {
+    width: 250px;
+    height: 350px;
+  }
+
+  .dixlieux {
+    font-size: 1.5em;
+  }
+
+  body {
+    background-image: none;
+  }
+
+  .logo {
+    cursor: pointer;
+    margin-left: 20px;
+    filter: drop-shadow(16px 8px 18px #000);
+    width: 50px;
+    height: 50px;
+  }
+
+  .slogan {
+    font-family: "Indie Flower", cursive;
+    letter-spacing: 3px;
+    font-size: 1em;
+    margin-right: 160px;
+    width: 100px;
+  }
+
+  .logslog {
+    margin-left: 20px;
+    line-height: 0;
+  }
+
+  footer {
+    padding-right: 260px;
+    height: 80px;
+  }
+
+  .reseau {
+    flex-direction: row;
+    align-items: center;
+    margin-left: 90px;
+    position: initial;
+    right: 0;
+    margin-top: -10px;
+  }
+
+  .reseausociaux {
+    margin-right: 20px;
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+  }
+
+  h4 {
+    display: none;
+  }
+
+  li {
+    display: none;
+  }
+}
