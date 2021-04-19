@@ -274,6 +274,10 @@ li:hover {
     display: none;
   }
 
+  .burger{
+    display: flexgit push ;
+  }
+
   h1{
     color: var(--couleur1);
   }
