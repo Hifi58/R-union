@@ -332,6 +332,133 @@ li:hover {
   text-decoration: underline wavy var(--couleurhover);
 }
 
+@media only screen and (max-device-width: 1024px){
+  .burger {
+    display: flex;
+    margin-right: 20px;
+    margin-left: 670px;
+  }
+
+  .lienspages {
+    display: none;
+  }
+
+  nav {
+    padding-right: 0px;
+    display: flex;
+  }
+
+  .daily,
+  .ile,
+  .logo2{
+    display: none;
+  }
+
+  .wrappernews {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  .photojournal{
+    width: 100%;
+    height: 50%;
+
+  }
+
+  .article1,
+  .article2{
+    display: flex;
+    padding: 0;
+    margin: 20px;
+  }
+
+  .grostitres,
+  .volcan1,
+  .petrel1,
+  h2{
+    display: none;
+  }
+
+  p{
+    padding: 0;
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+  body {
+    background-image: none;
+  }
+
+  .logo {
+    cursor: pointer;
+    margin-left: 20px;
+    filter: drop-shadow(16px 8px 18px #000);
+    width: 50px;
+    height: 50px;
+  }
+
+  .slogan {
+    font-family: "Indie Flower", cursive;
+    letter-spacing: 3px;
+    font-size: 0.8em;
+    margin-right: 160px;
+    width: 100px;
+  }
+
+  .logslog {
+    margin-left: 20px;
+    line-height: 0;
+  }
+
+  footer {
+    padding-right: 260px;
+    height: 80px;
+  }
+  .ecrits,
+  .ecrits2{
+    width: 200%;
+    margin: 0;
+    padding: 0;
+  }
+  .reseau {
+    flex-direction: row;
+    align-items: center;
+    margin-left: 70px;
+    position: initial;
+    margin-top: -15px;
+  }
+
+  .reseausociaux {
+    margin-right: 20px;
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    width: 50px;
+  }
+
+  h4 {
+    display: none;
+  }
+
+  li {
+    display: none;
+  }
+}
+
+@media only screen and (max-device-width: 768px){
+
+  .burger {
+    display: flex;
+    margin-right: 20px;
+    margin-left: 410px;
+  }
+
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   /*iphone 5/SE*/
   .burger {
@@ -348,7 +475,10 @@ li:hover {
     padding-right: 0px;
     display: flex;
   }
-
+  
+  p{
+    font-size: 1em;
+  }
   .daily,
   .ile,
   .logo2{
@@ -402,7 +532,127 @@ li:hover {
   .slogan {
     font-family: "Indie Flower", cursive;
     letter-spacing: 3px;
+    font-size: 0.8em;
+    margin-right: 160px;
+    width: 100px;
+  }
+
+  .logslog {
+    margin-left: 20px;
+    line-height: 0;
+  }
+
+  footer {
+    padding-right: 260px;
+    height: 80px;
+  }
+  .ecrits,
+  .ecrits2{
+    width: 200%;
+    margin: 0;
+    padding: 0;
+  }
+  .reseau {
+    flex-direction: row;
+    align-items: center;
+    margin-left: 70px;
+    position: initial;
+    margin-top: -15px;
+  }
+
+  .reseausociaux {
+    margin-right: 20px;
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+    width: 50px;
+  }
+
+  h4 {
+    display: none;
+  }
+
+  li {
+    display: none;
+  }
+}
+
+@media only screen and (max-device-width: 280px){
+  .burger {
+    display: flex;
+    margin-right: 20px;
+    margin-left: -60px;
+  }
+
+  .lienspages {
+    display: none;
+  }
+
+  nav {
+    padding-right: 0px;
+    display: flex;
+  }
+
+  p{
     font-size: 1em;
+  }
+  
+  .daily,
+  .ile,
+  .logo2{
+    display: none;
+  }
+
+  .wrappernews {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  .photojournal{
+    width: 100%;
+    height: 50%;
+
+  }
+
+  .article1,
+  .article2{
+    display: flex;
+    padding: 0;
+    margin: 20px;
+  }
+
+  .grostitres,
+  .volcan1,
+  .petrel1,
+  h2{
+    display: none;
+  }
+
+  p{
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    background-image: none;
+  }
+
+  .logo {
+    cursor: pointer;
+    margin-left: 20px;
+    filter: drop-shadow(16px 8px 18px #000);
+    width: 50px;
+    height: 50px;
+  }
+
+  .slogan {
+    font-family: "Indie Flower", cursive;
+    letter-spacing: 3px;
+    font-size: 0.8em;
     margin-right: 160px;
     width: 100px;
   }

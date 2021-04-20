@@ -88,3 +88,28 @@ html {
         text-decoration: underline wavy var(--couleurhover);
       }
     }
+
+    @media only screen and (min-device-width: 280px) and (max-device-width: 653px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+        body{
+            background-color: black;
+        }
+    
+        .wrappernav{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 60px;
+        }
+    
+        a{
+            font-size: 2em;
+            text-decoration: none;
+            color: var(--couleur2);
+            font-family: "Indie Flower", cursive;
+            line-height: 3.5;
+        }
+    
+        a:hover {
+            text-decoration: underline wavy var(--couleurhover);
+          }
+    }

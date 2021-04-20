@@ -393,98 +393,7 @@ li:hover {
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  /*iphone 5/SE*/
-  .burger {
-    display: flex;
-    margin-right: 20px;
-    margin-left: -20px;
-  }
 
-  .lienspages {
-    display: none;
-  }
-
-  nav {
-    padding-right: 0px;
-    display: flex;
-  }
-
-  .wrapper1 {
-    display: flex;
-    align-items: center;
-    margin-left: 40px;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-
-  .box1 {
-    width: 300px;
-    height: 400px;
-  }
-
-  .dixlieux {
-    font-size: 1.5em;
-  }
-
-  body {
-    background-image: none;
-  }
-
-  .logo {
-    cursor: pointer;
-    margin-left: 20px;
-    filter: drop-shadow(16px 8px 18px #000);
-    width: 50px;
-    height: 50px;
-  }
-
-  .slogan {
-    font-family: "Indie Flower", cursive;
-    letter-spacing: 3px;
-    font-size: 1em;
-    margin-right: 160px;
-    width: 100px;
-  }
-
-  .logslog {
-    margin-left: 20px;
-    line-height: 0;
-  }
-
-  footer {
-    padding-right: 260px;
-    height: 80px;
-  }
-
-  .reseau {
-    flex-direction: row;
-    align-items: center;
-    margin-left: 90px;
-    position: initial;
-    right: 0;
-    margin-top: -10px;
-  }
-
-  .reseausociaux {
-    margin-right: 20px;
-    filter: grayscale(0%);
-    -webkit-filter: grayscale(0%);
-    -moz-filter: grayscale(0%);
-    -ms-filter: grayscale(0%);
-    -o-filter: grayscale(0%);
-  }
-
-  h4 {
-    display: none;
-  }
-
-  li {
-    display: none;
-  }
-}
 @media only screen and (min-device-width: 280px) and (max-device-width: 653px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   /*iphone 5/SE*/
   .burger {
@@ -505,15 +414,15 @@ li:hover {
   .wrapper1 {
     display: flex;
     align-items: center;
-    margin-left: 40px;
+    margin-left: 0px;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   .box1 {
-    width: 250px;
+    width: 300px;
     height: 350px;
   }
 
@@ -536,7 +445,7 @@ li:hover {
   .slogan {
     font-family: "Indie Flower", cursive;
     letter-spacing: 3px;
-    font-size: 1em;
+    font-size: 0.8em;
     margin-right: 160px;
     width: 100px;
   }
@@ -547,21 +456,21 @@ li:hover {
   }
 
   footer {
-    padding-right: 260px;
-    height: 80px;
+    height: 100px;
+    width: 100%;
   }
 
   .reseau {
     flex-direction: row;
     align-items: center;
-    margin-left: 90px;
-    position: initial;
-    right: 0;
-    margin-top: -10px;
+    position: relative;
+    left: 40px;
+    top: -30px;
   }
 
   .reseausociaux {
-    margin-right: 20px;
+    margin-right: 40px;
+    width: 50px;
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
