@@ -257,6 +257,17 @@ li:hover {
   }
 }
 
+
+@media only screen and (max-device-width: 768px){
+
+  .burger {
+    display: flex;
+    margin-right: 20px;
+    margin-left: 410px;
+  }
+
+}
+
 /*iphone*/
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
@@ -403,4 +414,76 @@ li:hover {
   li {
     display: none;
   }
+}
+
+@media only screen and (min-device-width: 280px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+body {
+  background-image: none;
+}
+
+.lienspages{
+  display: none;
+}
+
+.burger{
+  display: flex;
+  margin-left: -60px;
+}
+
+h1{
+  color: var(--couleur1);
+  font-size: 3em;
+}
+
+.logo {
+  cursor: pointer;
+  margin-left: 30px;
+  filter: drop-shadow(16px 8px 18px #000);
+  width: 50px;
+  height: 50px;
+}
+
+.slogan {
+  font-family: "Indie Flower", cursive;
+  letter-spacing: 3px;
+  font-size: 0.8em;
+  width: 100px;
+}
+
+.logslog {
+  margin-left: 20px;
+  line-height: 0;
+  margin-top: 50px;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+}
+
+.reseau {
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  left: 40px;
+  top: -30px;
+}
+
+.reseausociaux {
+  width: 50px;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  margin-right: 40px;
+}
+
+h4 {
+  display: none;
+}
+
+li {
+  display: none;
+}
 }

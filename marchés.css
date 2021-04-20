@@ -285,21 +285,103 @@ li:hover {
 
 @media only screen and (min-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .burger {
-    margin-right: 200px;
-  }
-
-  .wrapper1 {
     display: flex;
-    align-items: center;
-    margin-left: 40px;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    margin-right: 20px;
+    margin-left: 410px;
   }
 
-  iframe{
+
+  .lienspages {
+    display: none;
+  }
+
+  nav {
+    padding-right: 0px;
+    display: flex;
+  }
+
+  .wrappervideo {
+    padding: 50px;
+    padding-left: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 800px;
+    margin-left: 40px;
+  }
+
+  iframe {
+    width: 600px;
+    height: 415px;
+  }
+
+section{
+  flex-direction: column;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 350px;
+  padding-top: 150px;
+}
+
+  .dixlieux {
+    font-size: 1.5em;
+  }
+
+  body {
+    background-image: none;
+  }
+
+  .logo {
+    cursor: pointer;
+    margin-left: 20px;
+    filter: drop-shadow(16px 8px 18px #000);
+    width: 50px;
+    height: 50px;
+  }
+
+  .slogan {
+    font-family: "Indie Flower", cursive;
+    letter-spacing: 3px;
+    font-size: 0.8em;
+    margin-right: 160px;
+    width: 100px;
+  }
+
+  .logslog {
+    margin-left: 20px;
+    line-height: 0;
+  }
+
+  footer {
+    height: 100px;
+    width: 100%;
+  }
+
+  .reseau {
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    left: 40px;
+    top: -30px;
+  }
+
+  .reseausociaux {
+    margin-right: 40px;
+    width: 50px;
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+  }
+
+  h4 {
+    display: none;
+  }
+
+  li {
+    display: none;
   }
 }
 
@@ -405,4 +487,104 @@ section{
   }
 }
 
+@media only screen and (max-device-width: 280px){
+
+  .burger {
+    display: flex;
+    margin-right: 20px;
+    margin-left: -20px;
+  }
+
+  .lienspages {
+    display: none;
+  }
+
+  nav {
+    padding-right: 0px;
+    display: flex;
+  }
+
+  .wrappervideo {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    margin-left: 40px;
+  }
+
+  iframe {
+    width: 300px;
+    height: 215px;
+  }
+
+section{
+  flex-direction: column;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 350px;
+  padding-top: 150px;
+}
+
+  .dixlieux {
+    font-size: 1.5em;
+  }
+
+  body {
+    background-image: none;
+  }
+
+  .logo {
+    cursor: pointer;
+    margin-left: 20px;
+    filter: drop-shadow(16px 8px 18px #000);
+    width: 50px;
+    height: 50px;
+  }
+
+  .slogan {
+    font-family: "Indie Flower", cursive;
+    letter-spacing: 3px;
+    font-size: 0.8em;
+    margin-right: 160px;
+    width: 100px;
+  }
+
+  .logslog {
+    margin-left: 20px;
+    line-height: 0;
+  }
+
+  footer {
+    height: 100px;
+    width: 100%;
+  }
+
+  .reseau {
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    left: 40px;
+    top: -30px;
+  }
+
+  .reseausociaux {
+    margin-right: 40px;
+    width: 50px;
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+  }
+
+  h4 {
+    display: none;
+  }
+
+  li {
+    display: none;
+  }
+}
 
