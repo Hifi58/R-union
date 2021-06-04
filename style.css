@@ -78,10 +78,8 @@ nav .wrappernav{
 /*corps*/
 
 main {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  min-height: 100vh;
+  display: flex;
 }
 
 h1 {
@@ -89,6 +87,7 @@ h1 {
   font-size: 4em;
   color: var(--couleur2);
   letter-spacing: 4px;
+  margin: auto;
 }
 
 /*footer*/
